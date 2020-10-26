@@ -1,0 +1,21 @@
+import pyautogui
+
+x = 0
+pyautogui.click(pyautogui.position())
+def work():
+    global x
+    
+#pyautogui.typewrite("hey")
+    pyautogui.press('space', interval=1.00)
+    x = x + 1
+
+try:    
+    while x < 10:
+        work()
+    else:
+        pass
+
+except KeyboardInterrupt:
+    pass
+
+
